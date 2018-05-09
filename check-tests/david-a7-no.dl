@@ -1,0 +1,13 @@
+%a7 TODO
+%kein lehrer mehr als 24 stunden vorbereitung care activity, grade 1,2 = 1, grade 2,3 = 2
+%summe 1und2 summe 2 und 3 groesten wert multiplizieren und fertig
+
+teacher(lehrer1).
+class(klasse1,1).
+course(kurs1).
+qualified(lehrer1,kurs1).
+curriculum(1,kurs1,15).
+formteacherOf(lehrer1,klasse1).
+assigned(lehrer1,klasse1,kurs1).
+activity(extra,10).
+responsibleFor(lehrer1,extra).

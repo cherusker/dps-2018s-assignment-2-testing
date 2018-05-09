@@ -1,0 +1,11 @@
+% (i1) Only courses from the given set (course/1) are used to classify assignments,
+%      curricula, and teachers' qualifications to teach courses.
+
+teacher(armin).
+class(a, 1).
+course(foo).
+qualified(armin, foo).
+curriculum(1, foo, 2).
+formteacherOf(armin, a).
+assigned(armin, a, foo).
+assigned(armin, a, bar). % <-- issue

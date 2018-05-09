@@ -1,0 +1,22 @@
+%a5
+%nicht mehr als 4 verschiedene klassen pro lehrer
+teacher(lehrer1).
+class(klasse1,1).
+course(kurs1).
+qualified(lehrer1,kurs1).
+curriculum(1,kurs1,2).
+formteacherOf(lehrer1,klasse1).
+assigned(lehrer1,klasse1,kurs1).
+activity(extra,1).
+responsibleFor(lehrer1,extra).
+
+
+class(klasse2,1).
+class(klasse3,1).
+class(klasse4,1).
+class(klasse5,1).
+
+assigned(lehrer1,klasse2,kurs1).
+assigned(lehrer1,klasse3,kurs1).
+assigned(lehrer1,klasse4,kurs1).
+assigned(lehrer1,klasse5,kurs1).

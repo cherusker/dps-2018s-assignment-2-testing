@@ -1,0 +1,12 @@
+% (e2) No teacher should spend more time preparing extra-curricular activities than
+% regular lessons.
+
+teacher(armin).
+class(a, 1).
+course(foo).
+qualified(armin, foo).
+curriculum(1, foo, 2).
+formteacherOf(armin, a).
+assigned(armin, a, foo).
+activity(elliegoulding, 1).
+responsibleFor(armin, elliegoulding).

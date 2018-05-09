@@ -1,0 +1,15 @@
+% (i3) If for some grade and some course no curriculum is given, 0 lessons are assumed
+%      to be required.
+
+teacher(armin).
+class(a, 1).
+course(foo).
+course(bar).
+qualified(armin, foo).
+curriculum(1, foo, 2).
+% curriculum(1, bar, 0). <-- that's missing ...
+formteacherOf(armin, a).
+assigned(armin, a, foo).
+
+test_gradeCourseHaveDefinedLessions(G, S) :- class(_, G), course(S), curriculum(G, S, L), L >= 0.
+:- class(_, G), course(S), not test_gradeCourseHaveDefinedLessions(G, S).

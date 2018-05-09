@@ -1,0 +1,14 @@
+% (a1) If a class does not require any lessons in some course, no teacher should be
+%      assigned to teach the course in that class.
+
+teacher(armin).
+class(a, 1).
+course(foo).
+course(bar).
+qualified(armin, foo).
+qualified(armin, bar).
+curriculum(1, foo, 2).
+% curriculum(1, bar, 4). <-- missing
+formteacherOf(armin, a).
+assigned(armin, a, foo).
+assigned(armin, a, bar).

@@ -1,0 +1,15 @@
+% (i2) Classes can only be in grade 1 - 4 and not in more than one grade.
+
+teacher(armin).
+teacher(connie).
+class(a, 2).
+class(b, 3).
+course(foo).
+qualified(armin, foo).
+qualified(connie, foo).
+curriculum(2, foo, 1).
+curriculum(3, foo, 2).
+formteacherOf(armin, a).
+formteacherOf(connie, b).
+assigned(armin, a, foo).
+assigned(connie, b, foo).

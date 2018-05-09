@@ -1,0 +1,22 @@
+% (g1) for each course requiring L > 0 lessons in the curriculum of the grade of a class,
+%      exactly one teacher is assigned to teach that course in that class;
+% (g2) each class has exactly one form teacher, who is also teaching that class in some
+%      course;
+% (g3) for each extra-curricular activity requiring L > 0 hours of preparation per week,
+%      exactly one teacher is assigned.
+
+teacher(armin).
+teacher(connie).
+class(a, 1).
+class(b, 1).
+course(foo).
+course(bar).
+curriculum(1, foo, 2).
+curriculum(1, bar, 3).
+activity(elliegoulding, 1).
+activity(marmozets, 2).
+activity(wolfhamlin, 3).
+
+% 36 possibilities for assignments
+% 8 possibilities for responsibilities
+% 288 total possibilities

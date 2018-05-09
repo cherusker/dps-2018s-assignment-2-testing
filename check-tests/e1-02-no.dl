@@ -1,0 +1,16 @@
+% (e1) An extra-curricular activity (activity/2) is led by exactly one teacher.
+
+teacher(armin).
+teacher(connie).
+class(a, 1).
+course(foo).
+course(bar).
+qualified(armin, foo).
+qualified(connie, bar).
+curriculum(1, foo, 10).
+curriculum(1, bar, 10).
+formteacherOf(armin, a).
+assigned(armin, a, foo).
+assigned(connie, a, bar).
+activity(elliegoulding, 2).
+% responsibleFor(armin, elliegoulding). <-- issue

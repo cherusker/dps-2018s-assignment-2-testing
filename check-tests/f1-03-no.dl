@@ -1,0 +1,15 @@
+% (f1) A class must not have more than one form teacher.
+
+teacher(armin).
+teacher(connie).
+class(a, 1).
+course(foo).
+course(bar).
+qualified(armin, foo).
+qualified(connie, bar).
+curriculum(1, foo, 2).
+curriculum(1, bar, 3).
+formteacherOf(armin, a).
+formteacherOf(connie, a).
+assigned(armin, a, foo).
+assigned(connie, a, bar).

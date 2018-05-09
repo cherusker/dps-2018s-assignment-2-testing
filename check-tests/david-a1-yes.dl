@@ -1,0 +1,25 @@
+%teacher(T).
+%class(Class,Grade).
+%course(Name).
+%qualified(Teacher,Course).
+%curriculum(Grade,Course,Lessonsweek).
+%formteacherOf(Teacher,Class).
+%hasRelativeIn(Teacher,Class).
+%assigned(Teacher,Class,Course).
+%activity(ExtraActivity,Preperation).
+%responsibleFor(Teacher,ExtraActivity).
+
+%a1
+%wenn klasse stunde nicht braucht soll auch kein lehrer zugewiesen werden fuer den gegenstand
+
+teacher(lehrer1).
+class(klasse1,1).
+course(kurs1).
+qualified(lehrer1,kurs1).
+curriculum(1,kurs1,2).
+formteacherOf(lehrer1,klasse1).
+assigned(lehrer1,klasse1,kurs1).
+activity(extra,1).
+responsibleFor(lehrer1,extra).
+
+curriculum(3,kurs1,4).

@@ -1,0 +1,24 @@
+% (a6) A teacher may not teach a class he or she has a relative in, except when there is a
+%      relative in every class, to which he or she could teach at least one course. In that
+%      case, he or she may teach a single class with a relative in it (and any number of
+%      courses in that class).
+
+teacher(armin).
+teacher(connie).
+class(a, 1).
+class(b, 2).
+course(foo).
+course(bar).
+qualified(armin, foo).
+qualified(connie, foo).
+qualified(connie, bar).
+curriculum(1, foo, 3).
+% curriculum(2, foo, 4).
+curriculum(2, bar, 5).
+formteacherOf(armin, a).
+formteacherOf(connie, b).
+hasRelativeIn(armin, a).
+% hasRelativeIn(armin, b).
+assigned(armin, a, foo).
+% assigned(connie, b, foo).
+assigned(connie, b, bar).

@@ -1,0 +1,14 @@
+% (a7) No teacher should be required to spend more than 24 hours preparing lessons
+%      and extra-curricular activities in total every week, where each lesson for grades 1
+%      and 2 accounts for 1 hour of preparation time and each lesson for grades 3 and 4
+%      accounts for 2 hours of preparation time.
+
+teacher(armin).
+class(a, 1).
+course(foo).
+qualified(armin, foo).
+curriculum(1, foo, 13).
+formteacherOf(armin, a).
+assigned(armin, a, foo).
+activity(elliegoulding, 12).
+responsibleFor(armin, elliegoulding).

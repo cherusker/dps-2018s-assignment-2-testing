@@ -1,0 +1,51 @@
+% (a5) No teacher should teach more than 4 different classes.
+
+teacher(armin).
+teacher(clone1).
+teacher(clone2).
+teacher(clone3).
+teacher(clone4).
+teacher(clone5).
+teacher(clone6).
+class(a, 1).
+class(b, 1).
+class(c, 1).
+class(d, 1).
+class(e, 1).
+class(f, 1).
+course(foo).
+course(bar).
+qualified(armin, foo).
+qualified(clone1, foo).
+qualified(clone1, bar).
+qualified(clone2, foo).
+qualified(clone2, bar).
+qualified(clone3, foo).
+qualified(clone3, bar).
+qualified(clone4, foo).
+qualified(clone4, bar).
+qualified(clone5, foo).
+qualified(clone5, bar).
+qualified(clone6, foo).
+qualified(clone6, bar).
+curriculum(1, foo, 2).
+curriculum(1, bar, 3).
+formteacherOf(clone1, a).
+formteacherOf(clone2, b).
+formteacherOf(clone3, c).
+formteacherOf(clone4, d).
+formteacherOf(clone5, e).
+formteacherOf(clone6, f).
+assigned(armin, a, foo).
+assigned(armin, b, foo).
+assigned(armin, c, foo).
+assigned(armin, d, foo).
+assigned(armin, e, foo). % <-- issue
+assigned(clone1, a, bar).
+assigned(clone2, b, bar).
+assigned(clone3, c, bar).
+assigned(clone4, d, bar).
+% assigned(clone5, e, foo). <-- issue
+assigned(clone5, e, bar).
+assigned(clone6, f, foo).
+assigned(clone6, f, bar).

@@ -1,0 +1,22 @@
+%a6
+%lehrer darf keine klasse unterrichten mit verwandten
+
+teacher(lehrer1).
+teacher(lehrer2).
+class(klasse1,1).
+class(klasse2,1).
+course(kurs1).
+course(kurs2).
+qualified(lehrer1,kurs1).
+qualified(lehrer2,kurs2).
+qualified(lehrer2,kurs1).
+curriculum(1,kurs1,2).
+curriculum(1,kurs2,4).
+formteacherOf(lehrer1,klasse1).
+assigned(lehrer1,klasse1,kurs1).
+assigned(lehrer1,klasse2,kurs1).
+assigned(lehrer2,klasse1,kurs2).
+activity(extra,1).
+responsibleFor(lehrer1,extra).
+
+hasRelativeIn(lehrer1,klasse1).

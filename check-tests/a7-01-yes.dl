@@ -1,0 +1,43 @@
+% (a7) No teacher should be required to spend more than 24 hours preparing lessons
+%      and extra-curricular activities in total every week, where each lesson for grades 1
+%      and 2 accounts for 1 hour of preparation time and each lesson for grades 3 and 4
+%      accounts for 2 hours of preparation time.
+
+teacher(armin).
+teacher(connie).
+teacher(clone1).
+teacher(clone2).
+teacher(clone3).
+teacher(clone4).
+class(a, 1).
+class(b, 2).
+class(c, 3).
+class(d, 4).
+course(foo).
+course(bar).
+qualified(armin, foo).
+qualified(connie, foo).
+qualified(clone1, bar).
+qualified(clone2, bar).
+qualified(clone3, bar).
+qualified(clone4, bar).
+curriculum(1, foo, 1).
+curriculum(1, bar, 1).
+curriculum(2, foo, 1).
+curriculum(2, bar, 1).
+curriculum(3, foo, 1).
+curriculum(3, bar, 1).
+curriculum(4, foo, 1).
+curriculum(4, bar, 1).
+formteacherOf(clone1, a).
+formteacherOf(clone2, b).
+formteacherOf(clone3, c).
+formteacherOf(clone4, d).
+assigned(armin, a, foo).
+assigned(armin, b, foo).
+assigned(connie, c, foo).
+assigned(connie, d, foo).
+assigned(clone1, a, bar).
+assigned(clone2, b, bar).
+assigned(clone3, c, bar).
+assigned(clone4, d, bar).

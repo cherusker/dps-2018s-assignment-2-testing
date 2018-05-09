@@ -1,0 +1,18 @@
+
+%a3
+%jeder kurs in jeder klasse sollte von maximal einen lehrer gehalten werden
+
+teacher(lehrer1).
+teacher(lehrer2).
+
+class(klasse1,1).
+course(kurs1).
+qualified(lehrer1,kurs1).
+qualified(lehrer2,kurs1).
+curriculum(1,kurs1,2).
+formteacherOf(lehrer1,klasse1).
+assigned(lehrer1,klasse1,kurs1).
+assigned(lehrer2,klasse1,kurs1).
+
+activity(extra,1).
+responsibleFor(lehrer1,extra).

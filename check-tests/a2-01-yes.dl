@@ -1,0 +1,13 @@
+% (a2) Only teachers who are qualified for a course may teach it.
+
+teacher(armin).
+class(a, 1).
+course(foo).
+course(bar).
+qualified(armin, foo).
+qualified(armin, bar).
+curriculum(1, foo, 2).
+curriculum(1, bar, 4).
+formteacherOf(armin, a).
+assigned(armin, a, foo).
+assigned(armin, a, bar).

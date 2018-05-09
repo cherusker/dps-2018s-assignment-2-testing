@@ -1,0 +1,14 @@
+% (a4) No teacher has to be without any teaching assignment.
+
+teacher(armin).
+teacher(connie).
+class(a, 1).
+class(b, 1).
+course(foo).
+qualified(armin, foo).
+qualified(connie, foo).
+curriculum(1, foo, 2).
+formteacherOf(armin, a).
+formteacherOf(connie, b).
+assigned(armin, a, foo).
+assigned(armin, b, foo).

@@ -1,0 +1,27 @@
+%teacher(T).
+%class(Class,Grade).
+%course(Name).
+%qualified(Teacher,Course).
+%curriculum(Grade,Course,Lessonsweek).
+%formteacherOf(Teacher,Class).
+%hasRelativeIn(Teacher,Class).
+%assigned(Teacher,Class,Course).
+%activity(ExtraActivity,Preperation).
+%responsibleFor(Teacher,ExtraActivity).
+
+%i1
+%nur course() können in qualified(_,Course), assigned(_,_,course) und curriculum(_,Course,_)
+
+teacher(lehrer1).
+class(klasse1,1).
+course(kurs1).
+qualified(lehrer1,kurs1).
+curriculum(1,kurs1,2).
+formteacherOf(lehrer1,klasse1).
+assigned(lehrer1,klasse1,kurs1).
+activity(extra,1).
+responsibleFor(lehrer1,extra).
+
+qualified(lehrer1,kursX).
+assigned(lehrer1,klasse1,kursY).
+curriculum(1,kursZ,2).

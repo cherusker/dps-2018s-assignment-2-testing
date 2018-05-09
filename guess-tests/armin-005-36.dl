@@ -1,0 +1,22 @@
+% (g1) for each course requiring L > 0 lessons in the curriculum of the grade of a class,
+%      exactly one teacher is assigned to teach that course in that class;
+% (g2) each class has exactly one form teacher, who is also teaching that class in some
+%      course;
+% (g3) for each extra-curricular activity requiring L > 0 hours of preparation per week,
+%      exactly one teacher is assigned.
+
+teacher(armin).
+teacher(connie).
+class(a, 1).
+class(b, 1).
+course(foo).
+course(bar).
+curriculum(1, foo, 2).
+curriculum(1, bar, 3).
+
+% 4 assignments, 2 teachers = 2^4 = 16 different possibilities
+% every class has 50% chance of being assigned only teacher:
+%   4 assignments: formteacher fixed for a, fixed for b ... 4 * 1 = 4 possibilities
+%   4 assignments: formteacher fixed for a, variable for b ... 4 * 2 = 8 possibilities
+%   4 assignments: formteacher variable for a, fixed for b ... 4 * 2 = 8 possibilities
+%   4 assignments: formteacher variable for a, variable for b ... 4 * 4 = 16 possibilities
