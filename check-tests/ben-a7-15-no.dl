@@ -1,0 +1,45 @@
+% (a7) No teacher should be required to spend more than 24 hours preparing lessons
+%      and extra-curricular activities in total every week, where each lesson for grades 1
+%      and 2 accounts for 1 hour of preparation time and each lesson for grades 3 and 4
+%      accounts for 2 hours of preparation time.
+
+teacher(t1).
+
+class(c1, 4).
+class(c2, 4).
+class(c3, 4).
+class(c4, 4).
+
+course(s1).
+course(s2).
+course(s3).
+course(s4).
+
+curriculum(4,s1,2).
+curriculum(4,s2,2).
+curriculum(4,s3,2).
+curriculum(4,s4,2).
+
+qualified(t1, s1).
+qualified(t1, s2).
+qualified(t1, s3).
+qualified(t1, s4).
+
+assigned(t1, c1, s1).
+assigned(t1, c1, s2).
+assigned(t1, c1, s3).
+assigned(t1, c1, s4).
+assigned(t1, c2, s1).
+assigned(t1, c2, s2).
+assigned(t1, c2, s3).
+assigned(t1, c2, s4).
+
+assigned(t1, c3, s1).
+assigned(t1, c3, s2).
+assigned(t1, c3, s3).
+assigned(t1, c3, s4).
+
+assigned(t1, c4, s1).
+assigned(t1, c4, s2).
+assigned(t1, c4, s3).
+assigned(t1, c4, s4).
